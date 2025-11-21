@@ -63,15 +63,72 @@ section h3 {
   border: 1px solid #ddd;
   border-radius: 5px;
   background-color: #f9f9f9;
+  /* 增加底部空間以容納參與者清單 */
+  padding-bottom: 18px;
 }
 
-.activity-card h4 {
-  margin-bottom: 10px;
-  color: #0066cc;
+/* 參與者區塊 */
+.participants {
+  margin-top: 12px;
 }
 
-.activity-card p {
+.participants strong {
+  display: block;
   margin-bottom: 8px;
+  color: #1a237e;
+}
+
+/* 參與者清單美化 */
+.participants-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.participant-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  background-color: #ffffff;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.02);
+  font-size: 14px;
+  color: #333;
+}
+
+.participant-avatar {
+  width: 28px;
+  height: 28px;
+  background-color: #1a237e;
+  color: #fff;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* 參與者名稱超長時換行截斷處理 */
+.participant-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* 空狀態樣式 */
+.participant-empty {
+  padding: 8px;
+  color: #666;
+  background-color: #fbfbfb;
+  border: 1px dashed #eee;
+  border-radius: 6px;
+  font-style: italic;
 }
 
 .form-group {
