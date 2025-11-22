@@ -101,6 +101,21 @@ section h3 {
   color: #333;
 }
 
+.participant-delete {
+  margin-left: auto;
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.participant-delete:hover {
+  background-color: rgba(198,40,40,0.08);
+}
+
 .participant-avatar {
   width: 28px;
   height: 28px;
